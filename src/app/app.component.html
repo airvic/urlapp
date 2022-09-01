@@ -1,0 +1,53 @@
+<nav class="nav">
+<div>
+<h3 class="url-name">URL SHORTENER</h3>
+
+</div>
+
+</nav>
+<mat-card>
+
+
+<section class="sec">
+    <form *ngIf ="!shorten">
+        <div>
+        
+            <input class="url" [(ngModel)]="Link" type="text" autocomplete="off" placeholder="Enter url...." name="url">
+                </div>
+            <div *ngIf="shorten_msg">
+                <p class="red">please enter a valid url!</p>
+            </div>
+            <button class="btn" type="submit" name="button" (click) = "submit($event)">Shorten</button>
+           
+    </form>
+  
+
+
+<div *ngIf="shorten">
+    <h2 class="shorten_header">Shortened Url:</h2> <a href="/" target="_blank">{{shorten_url}}</a>
+<br>
+
+    <button class="_btn">copy</button>  <a href="/"><button class="_btn" >reset</button></a>
+</div>
+</section>
+</mat-card>
+
+<!-- 
+
+<h3 class="recent">Recent</h3>
+<section class="sec">
+    <div class="card">
+        <div class="container">
+          <h4><b>{{l}}</b></h4>
+          <p class="para">{{l2}}</p>
+        </div>
+      </div>
+    
+</section>
+
+<button class="__btn"  (click) = "clearstorage($event)">Clear history</button>
+
+<mat-progress-spinner value="100" mode="determinate">
+</mat-progress-spinner>
+<mat-progress-spinner mode="indeterminate"></mat-progress-spinner> -->
+<app-about></app-about>

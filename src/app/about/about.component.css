@@ -1,0 +1,43 @@
+h2{
+    font-size: xx-large;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+margin-bottom: 20px;
+padding: 20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+  align-items: center !important;
+  justify-content: center;
+    display: inline-grid;
+    column-gap: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+
+  }
+  h4{
+    font-weight: 800;
+    font-size:xx-large;
+
+  }
+  p{
+  text-align: center;
+  }
