@@ -21,45 +21,49 @@ export class AppComponent {
   l2:any
      val: any = [];
 
-  constructor(public tinyurl:NgTinyUrlService){
+  constructor(private tinyurl:NgTinyUrlService){
    
   }
   ngOnInit(){
-    this.getlinks()
     // localStorage.setItem('values',JSON.stringify(this.val))
   }
 submit(e:any){
+  console.log("clicked")
   if(this.Link == ''){
     this.shorten  = false
   this.shorten_msg = true;
-      this.tinyurl.shorten(this.Link).subscribe(res => {
-    this.shorten_url = res;
 
-    this.val.push(localStorage.setItem(this.Link,JSON.stringify({
-      'name': this.shorten_url
-    })));
-
-    console.log(this.val)
-    console.log(this.Link,this.shorten_url)
-  
-    this.shorten = true
-    console.log(res);
-  });
    
+  }else{
+    console.log(this.Link)
+    this.tinyurl.shorten(this.Link).subscribe(res => {
+      this.shorten_url = res;
+      this.shorten = true
+      console.log(res)
+  
+      // this.val.push(localStorage.setItem(this.Link,JSON.stringify({
+      //   'name': this.shorten_url
+      // })));
+  
+      // console.log(this.val)
+      // console.log(this.Link,this.shorten_url)
+    
+      // this.shorten = true
+      // console.log(res);
+    });
   }
- 
 
 }
-getlinks(){
-// let l:any  = localStorage.getItem('val')
-//  this.l2 = JSON.parse(l)
-//  console.log(this.l2)
+// getlinks(){
+// // let l:any  = localStorage.getItem('val')
+// //  this.l2 = JSON.parse(l)
+// //  console.log(this.l2)
 
-console.log(localStorage)
-console.log(this.val)
-this.l2 = localStorage
+// console.log(localStorage)
+// console.log(this.val)
+// this.l2 = localStorage
 
-}
+// }
 
 clearstorage(e:any)
 {
