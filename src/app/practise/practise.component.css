@@ -1,0 +1,71 @@
+ img{
+    border-radius: 50%;
+    height: 200px;
+    overflow: hidden;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 125px
+}
+.container{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.image h2{
+    display: inline-block;
+ position: absolute;
+ padding: 10px;
+ margin-left: 40px;
+ font-weight: 600;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image h4{
+    display: inline-block;
+padding: 0px;
+margin: 0px;
+margin-top: 10px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image button{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+        font-weight: 600;
+        border: 1px solid rgb(219, 132, 147);
+        color:  rgb(219, 132, 147);
+        background-color: transparent;
+        width: 120px;
+        height:40px;
+     font-weight: 900;
+        border-radius: 7px;
+        cursor: pointer;
+        
+}
+.image button:hover{
+   background-color:  rgb(219, 132, 147);
+   color:white;
+   border: 2px solid rgb(219, 132, 147);
+   
+}
+
+
+.grid-container{
+    display:flex;
+    justify-content: center;
+}
+
+h1{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+label{
+    margin-right: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+p{
+    width: 600px;
+}
